@@ -1,5 +1,5 @@
 
-pub fn run_formatted_print() {
+pub fn run_1_2_formatted_print() {
   println!("Hello, world!");
 
   // In general, the `{}` will be automatically replaced with any
@@ -69,7 +69,7 @@ pub fn run_formatted_print() {
   println!("Pi is roughly {pi:decimal_points$}");
 }
 
-pub fn run_formatted_print_debug() {
+pub fn run_1_2_1_formatted_print_debug() {
   // This structure cannot be printed either with `fmt::Display` or
   // with `fmt::Debug`.
   #[allow(dead_code)]
@@ -120,7 +120,7 @@ pub fn run_formatted_print_debug() {
   println!("{:#?}", peter);
 }
 
-pub fn run_formatted_print_display() {
+pub fn run_1_2_2_formatted_print_display() {
   // Import (via `use`) the `fmt` module to make it available.
   use std::fmt;
 
@@ -217,7 +217,7 @@ pub fn run_formatted_print_display() {
   println!("Debug: {:?}", complex);
 }
 
-pub fn run_formatted_print_display_list() {
+pub fn run_1_2_2_1_formatted_print_display_list() {
   use std::fmt; // Import the `fmt` module.
 
   // Define a structure named `List` containing a `Vec`.
