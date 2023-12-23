@@ -2,10 +2,14 @@
 
 mod core;
 
-use crate::core::domain::repositories::hello_world;
+use crate::core::domain::repositories::hello_world::{
+    run_formatted_print,
+    run_formatted_print_debug,
+    run_formatted_print_display,
+};
 
 fn main() {
-    hello_world::run_formatted_print();
-    hello_world::run_formatted_print_debug();
-    hello_world::run_formatted_print_display();
+    run_formatted_print();
+    run_formatted_print_debug();
+    run_formatted_print_display();
 }
