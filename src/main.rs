@@ -3,13 +3,13 @@
 mod core;
 
 use crate::core::domain::repositories::hello_world::{
-    run_formatted_print,
-    run_formatted_print_debug,
-    run_formatted_print_display,
+  run_formatted_print,
+  run_formatted_print_debug,
+  run_formatted_print_display,
 };
 
 fn main() {
-    run_formatted_print();
-    run_formatted_print_debug();
-    run_formatted_print_display();
+  run_formatted_print();
+  run_formatted_print_debug();
+  run_formatted_print_display();
 }
