@@ -1,11 +1,12 @@
 
 pub fn run_1_2_formatted_print() {
+  println!("---------- 1.2 - Formatted print start ----------");
   println!("Hello, world!");
-
+  
   // In general, the `{}` will be automatically replaced with any
   // arguments. These will be stringified.
   println!("{} days", 31);
-
+  
   // Positional arguments can be used. Specifying an integer inside `{}`
   // determines which additional argument will be replaced. Arguments start
   // at 0 immediately after the format string.
@@ -40,19 +41,19 @@ pub fn run_1_2_formatted_print() {
   // and left-adjust by flipping the sign. This will output "10000".
   println!("{number:0<5}", number=1);
   // 10000
-
+  
   // You can use named arguments in the format specifier by appending a `$`.
   println!("{number:0>width$}", number=1, width=5);
-
+  
   // Rust even checks to make sure the correct number of arguments are used.
   println!("My name is {0}, {1} {0}", "Bond", "James",);
 
   // Only types that implement fmt::Display can be formatted with `{}`. User-
   // defined types do not implement fmt::Display by default.
-
+  
   #[allow(dead_code)] // disable `dead_code` which warn against unused module
   struct Structure(i32);
-
+  
   // This will not compile because `Structure` does not implement
   // fmt::Display.
   // println!("This struct `{}` won't print...", Structure(3));
@@ -63,13 +64,15 @@ pub fn run_1_2_formatted_print() {
   let number: f64 = 1.0;
   let width: usize = 5;
   println!("{number:>width$}");
-
+  
   let pi: f32 = 3.141592;
   let decimal_points = 3;
   println!("Pi is roughly {pi:decimal_points$}");
+  println!("---------- 1.2 - Formatted print end  ----------");
 }
 
 pub fn run_1_2_1_formatted_print_debug() {
+  println!("---------- 1.2.1 - Formatted print debug start ----------");
   // This structure cannot be printed either with `fmt::Display` or
   // with `fmt::Debug`.
   #[allow(dead_code)]
@@ -118,9 +121,11 @@ pub fn run_1_2_1_formatted_print_debug() {
 
   // Pretty print
   println!("{:#?}", peter);
+  println!("---------- 1.2.1 - Formatted print debug end ----------");
 }
 
 pub fn run_1_2_2_formatted_print_display() {
+  println!("---------- 1.2.2 - Formatted print display start ----------");
   // Import (via `use`) the `fmt` module to make it available.
   use std::fmt;
 
@@ -215,9 +220,11 @@ pub fn run_1_2_2_formatted_print_display() {
 
   println!("Display: {}", complex);
   println!("Debug: {:?}", complex);
+  println!("---------- 1.2.2 - Formatted print display end ----------");
 }
 
 pub fn run_1_2_2_1_formatted_print_display_list() {
+  println!("---------- 1.2.2 - Formatted print display list start ----------");
   use std::fmt; // Import the `fmt` module.
 
   // Define a structure named `List` containing a `Vec`.
@@ -250,4 +257,5 @@ pub fn run_1_2_2_1_formatted_print_display_list() {
   let v = List(vec![1, 2, 3]);
 
   println!("{}", v);
+  println!("---------- 1.2.2 - Formatted print display list end ----------");
 }
