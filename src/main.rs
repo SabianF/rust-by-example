@@ -7,4 +7,5 @@ use crate::core::domain::repositories::hello_world;
 fn main() {
     hello_world::run_formatted_print();
     hello_world::run_formatted_print_debug();
+    hello_world::run_formatted_print_display();
 }
