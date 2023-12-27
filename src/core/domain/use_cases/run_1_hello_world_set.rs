@@ -1,5 +1,5 @@
 
-// TODO: Current step 1.2.3 https://doc.rust-lang.org/rust-by-example/hello/print/fmt.html 
+// TODO: Current step 2 https://doc.rust-lang.org/rust-by-example/primitives.html 
 
 use crate::core::domain::repositories::hello_world::{
   run_1_2_formatted_print,
