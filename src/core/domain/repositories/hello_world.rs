@@ -224,7 +224,7 @@ pub fn run_1_2_2_formatted_print_display() {
 }
 
 pub fn run_1_2_2_1_formatted_print_display_list() {
-  println!("---------- 1.2.2 - Formatted print display list start ----------");
+  println!("---------- 1.2.2.1 - Formatted print display list start ----------");
   use std::fmt; // Import the `fmt` module.
 
   // Define a structure named `List` containing a `Vec`.
@@ -257,11 +257,11 @@ pub fn run_1_2_2_1_formatted_print_display_list() {
   let v = List(vec![1, 2, 3]);
 
   println!("{}", v);
-  println!("---------- 1.2.2 - Formatted print display list end ----------");
+  println!("---------- 1.2.2.1 - Formatted print display list end ----------");
 }
 
 pub fn run_1_2_3_formatted_print_formatting() {
-  println!("---------- 1.2.2 - Formatted print display formatting start ----------");
+  println!("---------- 1.2.3 - Formatted print display formatting start ----------");
   use std::fmt::{self, Formatter, Display};
 
   struct City {
@@ -319,5 +319,5 @@ pub fn run_1_2_3_formatted_print_formatting() {
     // for fmt::Display.
     println!("{}", color);
   }
-  println!("---------- 1.2.2 - Formatted print display formatting end ----------");
+  println!("---------- 1.2.3 - Formatted print display formatting end ----------");
 }
