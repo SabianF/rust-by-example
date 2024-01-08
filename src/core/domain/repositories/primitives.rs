@@ -109,8 +109,19 @@ pub fn run_2_2_tuples() {
     }
   }
 
-  println!("Activity: Add the `fmt::Display` trait to the `Matrix` struct:");
-  println!("{}", matrix);
+  println!("Activity: Add the `fmt::Display` trait to the `Matrix` struct:\n{}", matrix);
+
+  fn transpose(matrix: Matrix) -> Matrix {
+    return Matrix(
+      matrix.0,
+      matrix.2,
+      matrix.1,
+      matrix.3,
+    );
+  }
+
+  println!("Matrix:\n{}", matrix);
+  println!("Transpose:\n{}", transpose(matrix));
 
   println!("---------- 2.2 Tuples end ----------");
 }
