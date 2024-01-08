@@ -36,7 +36,7 @@ pub fn run_2_2_tuples() {
     let (int_param, bool_param) = pair;
 
     (bool_param, int_param)
-}
+  }
 
   // The following struct is for the activity.
   #[derive(Debug)]
