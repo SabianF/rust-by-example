@@ -1,5 +1,5 @@
 
-// TODO: Rust by Example 2: https://doc.rust-lang.org/rust-by-example/primitives.html 
+// TODO: Rust by Example 2.3: https://doc.rust-lang.org/rust-by-example/primitives/array.html 
 
 // TODO: After completing Rust by Example, the next area I want to explore is graphics programming: https://www.rastertek.com/tutindex.html 
 
