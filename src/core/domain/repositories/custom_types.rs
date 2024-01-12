@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 
 pub fn run_3_1_structures() {
   // An attribute to hide warnings for unused code.
@@ -102,6 +104,38 @@ pub fn run_3_1_structures() {
   // Add a function square which takes a Point and a f32 as arguments,
   // and returns a Rectangle with its top left corner on the point, and
   // a width and height corresponding to the f32.
+  fn square(top_left: Point, size: f32) -> Rectangle {
+
+    let bottom_right = Point {
+        x: top_left.x + size,
+        y: top_left.y + size,
+    };
+
+    return Rectangle {
+      top_left,
+      bottom_right,
+    };
+  }
+
+  let _top_left = Point {
+    x: 0.0,
+    y: 0.0,
+  };
+  let _size = 6.9;
+  let _square = square(_top_left, _size);
+
+  impl Display for Rectangle {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+      write!(f, "Point 1: ({}, {})\nPoint 2: ({}, {})",
+        self.top_left.x,
+        self.top_left.y,
+        self.bottom_right.x,
+        self.bottom_right.y,
+      )
+    }
+  }
+
+  println!("Square:\n{}", _square);
 
   println!("---------- 3.1 Structures end ----------");
 }
